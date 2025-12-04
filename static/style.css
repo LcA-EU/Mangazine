@@ -6,153 +6,63 @@
 
 .top {
     font-family: "Dela Gothic One", sans-serif;
-    color: #1B1B1B;
-    background-color: #2B4C7E;
+    color: white;
+    background-color: #1E2A38;
     border-bottom: #E4A39A;
-    font-size: 21px;
-    padding:  22px;
-    padding-left: 75px;
     display: flex;
-    height: 165px;
+    align-items: center;
+    height: 60px;
+    gap: 40px;
 }
 
 .top1 {
-    color: #C0452C;
+    padding-left: 10px;
+    /*mexer no tamanho*/
 }
 
-.topmind {
-    background-color: #F4E9D8;
+.top2 {
+    padding-left: 18px;
+    padding-top: 7px;
+    font-size: 15px;
 }
 
-.BL {
-    font-size: 2em;
-    cursor: pointer;
+.top3 {
+    width: 600px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    height: 40px;
+    overflow: hidden;
+    display: flex;
+}
+
+.top3 input {
+    flex: 1;
+    padding: 8px 10px; /* ajuste vertical para 8px para centralizar */
     border: none;
-    background-color: #2B4C7E;
-    padding-left: 155px ;
+    outline: none;
+    font-size: 14px;
+}
+
+.top3 button {
+    background: #1E2A38;
+    color: white;
+    border: none;
+    padding: 10px 14px;
+    cursor: pointer;
+}
+
+.top3 button:hover {
+    background: #16202C;
+}
+
+.top4 {
+    font-size: 15px;
+}
+
+.top5 {
     display: flex;
 }
 
-.sidebar {
-    position: fixed;
-    top: 0;
-    left: -140px;
-    width: 200px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    padding-top: 60px;
-    transition: left 0.5s ease;
-    z-index: 10;        /*permite que a sidebar fique por cima do header*/
-    background: linear-gradient(
-        #2B4C7E 0%,
-        #2B4C7E 165px,
-        black 165px,
-        black 167px,
-        #C0452C 167px,
-        #C0452C 100%
-    );
-    border-right: 2px solid black;
-}
-
-.sidebar.open {
-    left: 0px;
-}
-
-.topSB {
-    background-color: #2B4C7E;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 60px;
-    display: flex;
-    align-items: center;
-}
-
-.midSB {
-    background-color: transparent;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    padding-top: 100px;
-}
-
-.midSB a{
-    color: black;
-    text-decoration: none;
-    font-family: "Noto Serif JP", serif;
-    display: inline-block;
-    font-size: 21px;
-    padding-top: 18px;
-    padding-bottom: 15px;
-    transition: 
-        background-color 0.5s ease,
-        color 0.5s ease,
-        padding 0.5s ease;
-}
-
-.midSB a:hover{
-    padding-top: 15px;
-    padding-bottom: 18px;
-    color: #F4E9D8;
-    border-radius: 20px;
-}
-
-.midSB a img{
-    width: 30px;
-    height: 30px;
-    flex-shrink: 0;    /*impede que as imagens encolham*/
-    transition: 
-        background-color 0.5s ease,
-        color 0.5s ease,
-        padding 0.5s ease;
-    right: 14px;
-    border-radius: 5px;
-    position: absolute;     /*posiciona um elemento de forma independente do resto*/
-}
-
-.midSB a img:hover{
-    background-color: white;
-}
-
-.topnav .esp {
-    color: black;
-    font-family: "Noto Serif JP", serif;
-    font-size: 22px;
-    display: flexbox;
-    flex-direction: row;
-    padding-right: 20px;
-    padding-bottom: 5px;
-    padding-top: 5px;
-    border-right: 2px solid black;
-}
-
-.topnav {
-    background-color: #8B5E3C;
-    border-top: 2px solid black;
-    padding-left: 80px;
-    gap: 20px;      /*separa o texto dos links*/
-    display: flex;      /*faz com que haja mais de uma coisa na mesma linha*/
-    border-bottom: 2px solid #1B1B1B;
-}
-
-.topnav a {
-    float: left; 
-    padding: 5px 8px;
-    font-size: 20px;
-    color: rgb(29, 29, 29);
-    display: block;
-    text-decoration: none;
-    overflow: hidden;
-    transition: 
-        background-color 0.5s ease,
-        color 0.5s ease,
-        padding 0.5s ease;
-}
-
-.topnav a:hover{
-    color: #F4EBD0;
-    padding-bottom: 7px;
-    padding-top: 3px;
+body {
+    background-color: #F2E5D5;
 }
